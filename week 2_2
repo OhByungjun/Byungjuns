@@ -1,0 +1,27 @@
+T = int(input('input total number of words: '))
+
+
+def judging(text, Lblock, Rblock):
+    while Lblock < Rblock:
+        if text[Lblock] == text[Rblock]:
+            Lblock += 1
+            Rblock -= 1
+        else:
+            if Lblock < Rblock+1:
+                tmp = text[:Rblock] + text[Rblock+1:]
+                if tmp[:] == tmp[::-1]:
+                    return 1
+            if Lblock + 1 < Rblock:
+                tmp = text[:Lblock] + text[Lblock+1:]
+                if tmp[:] == tmp[::-1]:
+                    return 1
+            return 2
+
+
+for i in range(int(T)):
+    text = list(input('input words: '))
+    a = judging(text, 0, (len(text)-1))
+    if(a==1 or a==2):
+        print(a)
+    else:
+        print(0)
