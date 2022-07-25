@@ -1,0 +1,13 @@
+n = int(input("insert maximum number of Asterisk:"))
+
+for j in range(0, n):
+    for i in range(0, 2*n):
+        if((i<=n+j)&(i>=n-j)):print("*",end="")
+        else : print(" ",end="")
+    print("")
+
+for j in range(n-2, -1, -1):
+    for i in range(0, 2*n):
+        if((i<=n+j)&(i>=n-j)):print("*",end="")
+        else : print(" ",end="")
+    if(j!=0):print("")
