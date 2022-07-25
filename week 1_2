@@ -1,0 +1,15 @@
+n = int(input("insert Size of Asterisk Diamond:"))
+j = n
+
+for i in range(1, n):
+    if(((n-i+1)<=j)&((n+i-1)>=j)):
+        print(" "*(n-i) + "*"*(2*i-1)+" "*(n-i))
+    else:
+        break
+
+
+for i in range(n, 0, -1):
+    if(((n-i+1)<=j)&((n+i-1)>=j)):
+        print(" "*(n-i) + "*"*(2*i-1)+" "*(n-i))
+    else:
+        break
