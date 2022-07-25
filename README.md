@@ -1,4 +1,9 @@
 # Byungjuns
-studying
-* doing nothing or
-* stop making mistakes!
+## studying
+
+
+For Ef Coding
+
+	**doing nothing or stop making mistakes**
+
+Shxt
